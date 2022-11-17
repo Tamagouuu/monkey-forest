@@ -14,21 +14,21 @@
     />
     <title>Login</title>
   </head>
-  <body id="login">
+  <body>
     <div class="container">
       <nav>
         <div class="logo">
           <img src="img/logo.svg" />
         </div>
         <ul class="links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#facility">Facility</a></li>
-          <li><a href="#price">Price</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#facility">Facility</a></li>
+          <li><a href="index.html#price">Price</a></li>
         </ul>
         <div class="search-bar">
           <div class="user-profile">
-            <button><i class="fa-solid fa-user"></i></button>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
           </div>
           <div class="search">
             <button type="button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
@@ -38,11 +38,22 @@
       </nav>
     </div>
 
-    <div class="container">
-      <div class="card">
+    <div class="container" id="login">
+      <div class="card-login">
         <div class="input-group">
-          <input type="text" />
-          <input type="text" />
+          <div class="input-form">
+            <button type="button"><i class="fas fa-envelope"></i></button>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-form">
+            <button type="button"><i class="fas fa-lock"></i></button>
+            <input type="password" placeholder="Password" />
+          </div>
+        </div>
+        <a href="" class="forgot-link">Forgot Password?</a>
+        <div class="button-group">
+          <button>Log in</button>
+          <button>Register</button>
         </div>
       </div>
     </div>
