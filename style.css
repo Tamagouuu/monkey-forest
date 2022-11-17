@@ -14,8 +14,8 @@ body {
   font-family: "Jost", sans-serif;
 }
 
-.rotate-90 {
-  transform: rotate(90deg);
+.full {
+  min-height: 100vh;
 }
 
 .container {
@@ -195,6 +195,10 @@ nav {
   padding: 40px 50px;
   display: flex;
   gap: 50px;
+  background-image: url("img/map.svg");
+  background-position: center center;
+  background-size: 1000px;
+  background-repeat: no-repeat;
 }
 
 #about img {
@@ -290,7 +294,129 @@ nav {
   text-shadow: 1px 1px 12px #087119;
 }
 
+#accomodation {
+  margin-top: 50px;
+  background-color: #ececec;
+  border-radius: 50px;
+  padding: 40px 50px;
+  background-image: url("img/map.svg");
+  background-position: center center;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+}
+
+#accomodation h2 {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  gap: 70px;
+  margin-top: 30px;
+}
+
+.card-price-title {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: white;
+  border-top-left-radius: 20px;
+  padding: 6px 0;
+  border-top-right-radius: 20px;
+}
+
+.card-price {
+  display: flex;
+  flex-direction: column;
+  box-shadow: -0px 0px 9px 0px #838383a1;
+  border-radius: 20px;
+}
+
+.card-price-body {
+  background-color: white;
+  padding: 15px 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.card-price-body .hotel-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.stars {
+  margin: 3px 0;
+}
+
+.card-price-body button {
+  width: 100%;
+  border: 0;
+  font-family: "Jost", sans-serif;
+  padding: 7px 0;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #838383a1;
+  font-weight: 600;
+}
+
+.card-price-body .hotel-price {
+  font-size: 1.3rem;
+}
+
+#contact {
+  margin-top: 50px;
+  background-color: #ececec;
+  border-radius: 50px;
+  padding: 40px 60px;
+  background-image: url("img/map.svg");
+  background-position: center center;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+#contact .google-map {
+  border-radius: 20px;
+}
+
+#contact .contact-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.email-form,
+.message-form {
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Jost", sans-serif;
+  box-shadow: 4px 5px #838383a1;
+  border: 0;
+}
+
+.email-form {
+  margin-bottom: 5px;
+}
+
+.email-form::placeholder,
+.message-form::placeholder {
+  font-size: 1rem;
+}
+
+.contact-form button {
+  border: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: #a7a7a7;
+  color: white;
+  font-family: "Jost", sans-serif;
+}
+
 footer {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   background-color: #a7a7a7;
